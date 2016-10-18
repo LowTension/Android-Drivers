@@ -1,0 +1,6 @@
+cp -rf Level packages/apps/
+
+mmm packages/apps/Level		//build apk
+mmm packages/apps/Level/jni	//build lib
+
+support DMT_GSENSOR_calibration_BroadCastReceiver

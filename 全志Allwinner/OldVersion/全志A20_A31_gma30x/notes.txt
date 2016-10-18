@@ -1,0 +1,16 @@
+1. FAE需要在全志平台調整以下2個fun()的需要內容,pandaboard無法驗證
+static int gsensor_fetch_sysconfig_para(void)
+static int gsensor_detect(struct i2c_client *client, struct i2c_board_info *info)
+
+2.
+把客戶端以下檔案開起來編輯,添加以下關於gma302/gma303增加之內容
+libsensors/sensorDetect.cpp
+libsensors/sensors.h
+libsensors/sensors.cpp
+
+sensors.cpp請參考libsensors_bma250/sensors.cpp來做修改
+
+
+3. gma302 & gma303 開關
+#define GMA302	/* Enable flag use gma302 setup ,Disable use gma303 setup*/
+//#define GMA302	/* use gma303 setup*/

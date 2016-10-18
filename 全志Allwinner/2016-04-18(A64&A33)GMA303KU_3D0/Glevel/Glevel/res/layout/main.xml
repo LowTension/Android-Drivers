@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+  
+	<com.globalmems.level.view.LevelView 
+		android:id="@+id/level"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" />
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+>
+	
+<TableLayout 
+	android:id="@+id/tableLayout1" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent">
+	<TableRow android:id="@+id/table1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	    <Button
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+		android:id="@+id/cab_1"
+		android:layout_width="wrap_content"
+		android:layout_height="42sp"
+		android:textSize="20sp" 
+		android:background="@drawable/button_blue"
+		android:text="@string/str_calibration"
+		android:textColor="@drawable/palegoldenrod" />
+	</TableRow>
+</TableLayout>    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+	<!--
+		<TextView 
+		android:id="@+id/horizontal_e" 
+		android:layout_width="220dip" 
+		android:layout_height="wrap_content"
+		android:textSize="15sp" 
+		android:text="@string/str_horizontal_e"
+		android:textColor="@drawable/pink"/>-->
+		<TextView 
+		android:id="@+id/horizontal_z" 
+		android:layout_width="250dip" 
+		android:layout_height="wrap_content"
+		android:textSize="10sp" 
+		android:text="@string/str_horizontal"
+		android:textColor="@drawable/red"/>
+    </LinearLayout>
+  	<LinearLayout
+    android:layout_width="fill_parent"
+	android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content" >
+		<CheckBox
+        android:id="@+id/show_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:checked="false"
+        android:text="@string/str_show_detail" />
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/detail_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="horizontal" >
+		<TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    <RadioGroup
+	    android:id="@+id/RdGpCalib"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+
+	    <RadioButton
+	        android:id="@+id/rdbUp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="false"
+	        android:text="@string/str_up"
+	        android:textColor="@drawable/pink" />
+
+	    <RadioButton
+	        android:id="@+id/rdbDown"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="false"
+	        android:text="@string/str_down"
+	        android:textColor="@drawable/pink" />
+
+	    <RadioButton
+	        android:id="@+id/rdbDefault"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="@string/str_def"
+	        android:textColor="@drawable/pink" />
+	</RadioGroup>
+        <Button
+            android:id="@+id/delay"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+    		android:layout_marginLeft="5dp"
+            android:text="@string/str_delay"
+            android:textSize="11sp"
+            android:textColor="@drawable/lightgrey" />
+            <TableLayout 
+			android:id="@+id/table_accelerometer" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content">
+				
+			<TableRow 
+		    android:id="@+id/table_acc" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content">
+			<TextView 
+		    android:id="@+id/accelerometer" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="10sp" 
+		    android:layout_weight="1"
+		    android:text="@string/str_acc"
+		    android:textColor="@drawable/greenyellow"/>
+			<TextView 
+		    android:id="@+id/accelerometer_x" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="10sp"
+		    android:textColor="@drawable/blanchedalmond"/>
+			<TextView 
+		    android:id="@+id/accelerometer_y" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="10sp" 
+		    android:textColor="@drawable/blanchedalmond"/>
+			<TextView 
+		    android:id="@+id/accelerometer_z" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="10sp"
+		    android:textColor="@drawable/blanchedalmond"/>
+			</TableRow>
+			</TableLayout>
+		
+            <TableLayout 
+			android:id="@+id/table_accelerometer_offset" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content">
+			<TableRow 
+		    android:id="@+id/table_acc_offset" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+			<TextView 
+		    android:id="@+id/offset" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="12sp"
+		    android:layout_weight="1"
+		    android:text="@string/str_acc_offset"
+		    android:textColor="@drawable/tan"/>
+			<TextView 
+		    android:id="@+id/acc_offset_x" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="12sp"
+		    android:textColor="@drawable/aquamarine"/>
+			<TextView 
+		    android:id="@+id/acc_offset_y" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="12sp"
+		    android:textColor="@drawable/aquamarine"/>
+			<TextView 
+		    android:id="@+id/acc_offset_z" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="12sp"
+		    android:textColor="@drawable/aquamarine"/>
+			</TableRow>
+			</TableLayout>
+			
+			<TableLayout 
+			android:id="@+id/table_accelerometer_sigma" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content">
+			<TableRow 
+		    android:id="@+id/table_acc_sigma" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content">
+			<TextView 
+		    android:id="@+id/acc_sigma" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="10sp" 
+		    android:layout_weight="1"
+		    android:text="@string/str_acc_sigma"
+		    android:textColor="@drawable/tan"/>
+			<TextView 
+		    android:id="@+id/acc_sigma_x" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="10sp"
+		    android:textColor="@drawable/blanchedalmond"/>
+			<TextView 
+		    android:id="@+id/acc_sigma_y" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:textSize="10sp" 
+		    android:textColor="@drawable/blanchedalmond"/>
+			<TextView 
+		    android:id="@+id/acc_sigma_z" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="10sp"
+		    android:textColor="@drawable/blanchedalmond"/>
+			</TableRow>
+			</TableLayout>
+			<Button
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+		android:id="@+id/clear_cab"
+		android:layout_width="wrap_content"
+		android:layout_height="36dp"
+		android:textSize="10sp" 
+		android:background="@drawable/button_blue"
+		android:text="@string/str_clear"
+		android:textColor="@drawable/black" />
+			 </TableLayout>
+			</LinearLayout>
+	<Button
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+		android:id="@+id/close"
+		android:layout_gravity="bottom"
+		android:layout_width="50dp"
+		android:layout_height="36dp"
+		android:background="@drawable/button_blue"
+		android:textSize="10sp" 
+		android:text="@string/str_exit"
+		android:textColor="@drawable/red" />
+<!--   
+	<Button
+        android:id="@+id/bAdd_Shortcut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Shortcut" />
+   	<Button
+        android:id="@+id/bRemove"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Shortcut" />
+-->
+</LinearLayout>	    
+</merge>

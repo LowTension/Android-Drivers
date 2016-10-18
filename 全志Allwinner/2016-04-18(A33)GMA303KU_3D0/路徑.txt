@@ -1,0 +1,16 @@
+android4.2.1\bootable\recovery
+
+
+
+only use this define in recovery.cpp:
+
+#define GMA_BACKUP_FILE
+
+
+please copy these (ifdef/endif) to target platform
+
+#ifdef GMA_BACKUP_FILE
+.
+.
+.
+#endif
