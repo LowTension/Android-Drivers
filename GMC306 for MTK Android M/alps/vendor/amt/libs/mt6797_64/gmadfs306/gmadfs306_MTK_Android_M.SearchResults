@@ -1,0 +1,5 @@
+---- SOFT_IRON_MATRIX Matches (4 in 3 files) ----
+GMFS_Measure.c:	GMFLOAT soft[9]=SOFT_IRON_MATRIX;
+Ossf_magnetic.h (libgme_oss):extern float SOFT_IRON_MATRIX[][3]; //Soft iron matrix
+Softiron.h:#define SOFT_IRON_MATRIX {0.694478,0.000291,-0.023579,0.017787,1.316352,0.057573,-0.166986,-0.026499,1.100333}
+Softiron.h://#define SOFT_IRON_MATRIX {1,0,0,0,1,0,0,0,1}

@@ -1,0 +1,8 @@
+config MTK_GMA303
+	bool "GMA303 for MediaTek package"
+	default n
+	help
+	  It support different accelerometer sensor.
+          If this option is set,
+	  it will support
+          GMA303 Accelerometer.
